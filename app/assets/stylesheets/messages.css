@@ -10,12 +10,43 @@
 .side-up {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.chater a{
+  background-color: #253141;
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.chat-create a{
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
 }
+.room{
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .main {
   background-color: #FFFFFF;
   width: calc(100vw - 300px);
