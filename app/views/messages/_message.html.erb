@@ -2,18 +2,15 @@
   <div class="upper-message">
     <div class="namae">
       <%= message.user.name %>
-
     </div>
     <div class="hiniti">
       <%= l message.created_at %>
-
     </div>
   </div>
   <div class="lower-message">
     <div class="kinyuran">
       <%= message.content%>
-
     </div>
-    <%= image_tag message.image.variant(realize: '500×500'), class: 'message-image' if message.image.attached? %>
+    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
   </div>
 </div>
